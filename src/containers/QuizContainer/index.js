@@ -22,18 +22,18 @@ const QuizContainer = React.forwardRef((props, ref) => {
         if (questionItem.questions) {
             setQuestionPath(newQuestionPath);
             setActiveStep((prev) => prev + 1);
-            if (!checkYesNoQuestion(questionItem)) {
+            //if (!checkYesNoQuestion(questionItem)) {
                 let newSteps = [];
                 for (var i = 0; i <= activeStep + 1; i++) {
                     const questionItem = getQuestion(newQuestionPath, i);
-                    if (!checkYesNoQuestion(questionItem)) {
+                    //if (!checkYesNoQuestion(questionItem)) {
                         newSteps.push(questionItem.label);
-                    }
+                    //}
                 }
 
                 setSteps(newSteps);
                 setStepperStep(newSteps.length - 1);
-            }
+            //}
             // clear up asins
             setAsins(DefaultAsins);
         } else {

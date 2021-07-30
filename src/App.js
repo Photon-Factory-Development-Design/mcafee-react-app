@@ -75,14 +75,14 @@ function App() {
     return (
         <React.Fragment>
             <ThemeProvider theme={theme}>
-                <Box>
+                {/* <Box>
                     <Header onClickQuiz={onClickQuiz} />
-                </Box>
+                </Box> */}
                 <QuizContainer
                     ref={quizRef}
                     setDetailProduct={setDetailProduct}
                 />
-                <IngrdientsContainer setIngredient={setIngredient} />
+                {/* <IngrdientsContainer setIngredient={setIngredient} /> */}
 
                 <ProductDetailDialog
                     open={open}
@@ -90,12 +90,12 @@ function App() {
                     product={product}
                 />
 
-                <IngredientDetailDialog
+                {/* <IngredientDetailDialog
                     open={ingredientOpen}
                     setOpen={setIngredientOpen}
                     ingredient={ingredient}
-                />
-                <Hero />
+                /> */}
+                {/* <Hero /> */}
             </ThemeProvider>
         </React.Fragment>
     );

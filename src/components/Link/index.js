@@ -6,7 +6,7 @@ import offerings from 'common/data/offerings';
 const Link = ({ children, ...props }) => {
     const ref = React.useRef(null);
     const initRef = React.useRef(false); // represent if the compoent is initialized
-    const isStock = findOfferingIDFromAsin(offerings, props.asin).error;
+    const isStock = findOfferingIDFromAsin(offerings, props.asin)?.error;
 
     React.useEffect(() => {
         // construct link attributes including href w/ aws values
