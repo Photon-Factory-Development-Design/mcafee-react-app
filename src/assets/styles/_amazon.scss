@@ -1,0 +1,77 @@
+.HtmlEditor {
+    width: 100%;
+}
+
+button {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+button::focus {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+button::active {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.product-image img {
+    max-width: unset !important;
+}
+
+.adt-product-details {
+    width: 100% !important;
+    overflow: auto;
+}
+
+.a-unordered-list li,
+ul li {
+    list-style: none !important;
+}
+
+.react-multiple-carousel__arrow {
+    background: transparent !important;
+}
+
+.react-multiple-carousel__arrow::before {
+    color: #C49C57 !important;
+    font-size: 20px;
+}
+
+.carousel-right-arrow {
+    top: 50%;
+    transform: translateY(-50%) translateX(-100%);
+    left: 100%;
+    cursor: pointer;
+}
+
+.carousel-left-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .carousel-right-arrow {
+        // left: 80%;
+    }
+
+    .carousel-left-arrow {
+        // left: 10%;
+    }
+}
+
+.react-multi-carousel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
