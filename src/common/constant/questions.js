@@ -1,5 +1,3 @@
-import { base_url } from 'common/constant';
-
 const questions = {
     questions: [
         {
