@@ -1,14 +1,22 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+
+// core components
+import Typography from 'components/Typography';
+import QuestionItemContainer from 'components/QuestionItemContainer/index';
+import QuizCarouselItem from 'components/Carousel/QuizCarouselItem/QuizCarouselItem';
+
+// material ui components
+import Box from '@material-ui/core/Box';
 import MuiCarousel from 'react-material-ui-carousel';
+
+// utils
 import { getQuestion, checkYesNoQuestion } from 'common/constant/questions';
-import { Typography, QuestionItemContainer } from 'components';
 
 const CarouselItem = ({ questionPath, index, onSelectQuestion }) => {
-    const itemQuestion = React.useMemo(() => getQuestion(questionPath, index), [
-        questionPath,
-        index
-    ]);
+    const itemQuestion = React.useMemo(
+        () => getQuestion(questionPath, index),
+        [questionPath, index]
+    );
 
     return (
         <Box>
@@ -57,7 +65,13 @@ const CarouselItem = ({ questionPath, index, onSelectQuestion }) => {
     );
 };
 
-const Carousel = ({ items, questionPath, activeIndex, onSelectQuestion }) => {
+const Carousel = ({
+    items,
+    questionPath,
+    activeIndex,
+    onSelectQuestion,
+    onRetakeQuiz
+}) => {
     return (
         <MuiCarousel
             animation="slide"
@@ -78,11 +92,12 @@ const Carousel = ({ items, questionPath, activeIndex, onSelectQuestion }) => {
                 }
             }}>
             {items.map((_, index) => (
-                <CarouselItem
+                <QuizCarouselItem
                     key={index}
                     questionPath={questionPath}
                     index={index}
                     onSelectQuestion={onSelectQuestion}
+                    onRetakeQuiz={onRetakeQuiz}
                 />
             ))}
         </MuiCarousel>

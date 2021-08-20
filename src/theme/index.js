@@ -49,19 +49,6 @@ const Theme = createMuiTheme({
                     fontSize: '3rem'
                 }
             }
-        },
-        MuiButton: {
-            root: {
-                borderRadius: '0px',
-                '&::-moz-focus-inner': {
-                    border: 0,
-                    outline: 'none'
-                }
-            },
-            label: {
-                fontFamily: 'GothamMedium',
-                fontSize: '18px'
-            }
         }
     }
 });
