@@ -1,5 +1,5 @@
 const styles = (theme) => ({
-    award_root: {
+    footer_root: {
         position: 'relative',
         overflow: 'hidden',
         '&>img': {
@@ -7,7 +7,7 @@ const styles = (theme) => ({
             left: 0,
             top: 0,
             width: '100%',
-            height: '150%',
+            height: '100%',
             objectFit: 'cover',
             zIndex: -1,
             [theme.breakpoints.down('md')]: {
@@ -18,28 +18,31 @@ const styles = (theme) => ({
         padding: '5% 0px'
     },
     container: {
-        '&>p': {
-            fontSize: 22,
-            fontWeight: 600,
-            color: '#fff',
-            textAlign: 'center',
-            paddingBottom: 50
-        }
-    },
-    logoContainer: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        [theme.breakpoints.down('md')]: {
-            flexDirection: 'column'
+        '&>p': {
+            fontWeight: 400,
+            textAlign: 'center',
+            padding: '5px 0px'
         },
-
-        '&>img': {
-            maxWidth: 150,
-            margin: '0px 20px',
+        '&>p:nth-child(1)': {
+            fontSize: 50,
+            color: '#333333',
             [theme.breakpoints.down('md')]: {
-                margin: '10px 0px'
+                fontSize: 30
+            }
+        },
+        '&>p:nth-child(2)': {
+            color: '#000',
+            fontSize: 16
+        },
+        '& button': {
+            marginTop: '30px',
+            '&>span': {
+                fontSize: 13,
+                textTransform: 'none'
             }
         }
     }

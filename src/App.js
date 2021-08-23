@@ -8,7 +8,9 @@ import { setOfferings } from 'common/data/offerings';
 
 // core components
 import Hero from 'components/Hero/Hero';
+import AwardSection from 'containers/AwardSection/AwardSection';
 import ProtectSection from 'containers/ProtectSection/ProtectSection';
+import Footer from 'containers/Footer/Footer';
 
 function App() {
     const [open, setOpen] = React.useState(false);
@@ -59,12 +61,13 @@ function App() {
                     setDetailProduct={setDetailProduct}
                 />
                 <ProtectSection />
-
                 <ProductDetailDialog
                     open={open}
                     setOpen={setOpen}
                     product={product}
                 />
+                <AwardSection />
+                <Footer />
             </ThemeProvider>
         </React.Fragment>
     );

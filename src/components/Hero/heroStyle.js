@@ -3,7 +3,8 @@ const styles = (theme) => ({
         width: '100%',
         height: '80vh',
         position: 'relative',
-        padding: '10% 0px',
+        padding: '50px 0px',
+        overflow: 'hidden',
         '& .background': {
             position: 'absolute',
             left: 0,

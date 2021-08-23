@@ -8,6 +8,7 @@ const styles = (theme) => ({
             width: '100%',
             objectFit: 'cover',
             zIndex: -1,
+            height: '100%',
             [theme.breakpoints.down('md')]: {
                 height: '100%',
                 //transform: 'translateX(-50%)',
