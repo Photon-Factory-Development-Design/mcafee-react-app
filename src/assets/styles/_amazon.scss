@@ -37,12 +37,18 @@ ul li {
 }
 
 .react-multiple-carousel__arrow {
-    background: transparent !important;
+    background-color: #FFFFFF;
+    border-radius: 0px !important;
 }
 
 .react-multiple-carousel__arrow::before {
-    color: #C49C57 !important;
-    font-size: 20px;
+    color: #B1BABF !important;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.react-multiple-carousel__arrow:hover {
+    background-color: #FFFFFF;
 }
 
 .carousel-right-arrow {
@@ -55,9 +61,19 @@ ul li {
 .carousel-left-arrow {
     top: 50%;
     transform: translateY(-50%);
-    left: 0%;
+    left: 0;
     cursor: pointer;
 }
+
+.react-multiple-carousel__arrow--left {
+    left: 0;
+    transform: translateX(-10px);
+}
+.react-multiple-carousel__arrow--right {
+    right: 0;
+    transform: translateX(10px);
+}
+
 
 @media (max-width: 1024px) {
     .carousel-right-arrow {

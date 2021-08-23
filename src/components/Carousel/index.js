@@ -70,7 +70,9 @@ const Carousel = ({
     questionPath,
     activeIndex,
     onSelectQuestion,
-    onRetakeQuiz
+    onRetakeQuiz,
+    asins,
+    setDetailProduct
 }) => {
     return (
         <MuiCarousel
@@ -98,6 +100,8 @@ const Carousel = ({
                     index={index}
                     onSelectQuestion={onSelectQuestion}
                     onRetakeQuiz={onRetakeQuiz}
+                    asins={asins}
+                    setDetailProduct={setDetailProduct}
                 />
             ))}
         </MuiCarousel>

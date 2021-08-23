@@ -47,36 +47,15 @@ const QuizContainer = React.forwardRef((props, ref) => {
 
     return (
         <BackgroundContainer ref={ref} color="white" vertical={8}>
-            <Container>
-                <Carousel
-                    items={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
-                    questionPath={questionPath}
-                    activeIndex={activeStep}
-                    onSelectQuestion={onSelectQuestion}
-                    onRetakeQuiz={onRetakeQuiz}
-                />
-            </Container>
-
-            <Box
-                className="adt-results"
-                bgcolor="background.primary"
-                mt={2}
-                pb={6}
-                pt={5}>
-                <Box mt={5} py={2}>
-                    <Typography variant="h3" color="darkBlue">
-                        RECOMMENDED FOR YOU
-                    </Typography>
-                </Box>
-                <Box my={2} mt={4}>
-                    <Container>
-                        <ProductContainer
-                            setDetailProduct={props.setDetailProduct}
-                            asins={asins}
-                        />
-                    </Container>
-                </Box>
-            </Box>
+            <Carousel
+                items={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
+                questionPath={questionPath}
+                activeIndex={activeStep}
+                onSelectQuestion={onSelectQuestion}
+                onRetakeQuiz={onRetakeQuiz}
+                asins={asins}
+                setDetailProduct={props.setDetailProduct}
+            />
         </BackgroundContainer>
     );
 });

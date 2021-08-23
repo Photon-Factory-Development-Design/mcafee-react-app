@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 // core components
+import ProductsView from 'components/ProductsView/ProductsView';
 import McaFeeButton from 'components/Buttons/McaFeeButton/McaFeeButton';
 
 // styles
@@ -45,7 +46,13 @@ class QuizCarouselItem extends React.Component {
             return <Skeleton variant="rect" width="100%" height={700} />;
         }
         if (!itemQuestion.questions) {
-            return <Skeleton variant="rect" width="100%" height={700} />;
+            return (
+                <ProductsView
+                    asins={this.props.asins}
+                    setDetailProduct={this.props.setDetailProduct}
+                    onRetakeQuiz={onRetakeQuiz}
+                />
+            );
         }
 
         return (

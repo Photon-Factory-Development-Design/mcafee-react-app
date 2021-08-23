@@ -15,12 +15,14 @@ const styles = () => ({
         color: '#000',
         textTransform: 'none',
         '& svg': {
-            fontSize: '30px !important'
+            fontSize: '30px !important',
+            fontWeight: 300,
         }
     },
     label: {
         fontSize: 30,
-        paddingRight: 20
+        paddingRight: 20,
+        fontWeight: 300
     }
 });
 
