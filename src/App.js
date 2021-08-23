@@ -7,13 +7,12 @@ import { db, firebase_console } from 'common/firebase';
 import { setOfferings } from 'common/data/offerings';
 
 // core components
-import QuizCarouselItem from 'components/Carousel/QuizCarouselItem/QuizCarouselItem';
+import Hero from 'components/Hero/Hero';
+import ProtectSection from 'containers/ProtectSection/ProtectSection';
 
 function App() {
     const [open, setOpen] = React.useState(false);
-    const [ingredientOpen, setIngredientOpen] = React.useState(false);
     const [product, setDetailProduct] = React.useState(null);
-    const [ingredient, setIngredient] = React.useState(null);
 
     const quizRef = React.useRef(null);
 
@@ -22,13 +21,6 @@ function App() {
             setOpen(true);
         }
     }, [product]);
-
-    React.useEffect(() => {
-        console.log(ingredient);
-        if (ingredient) {
-            setIngredientOpen(true);
-        }
-    }, [ingredient]);
 
     React.useEffect(() => {
         firebase_console
@@ -61,10 +53,12 @@ function App() {
     return (
         <React.Fragment>
             <ThemeProvider theme={theme}>
+                <Hero />
                 <QuizContainer
                     ref={quizRef}
                     setDetailProduct={setDetailProduct}
                 />
+                <ProtectSection />
 
                 <ProductDetailDialog
                     open={open}

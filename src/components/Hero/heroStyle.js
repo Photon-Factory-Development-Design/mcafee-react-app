@@ -1,9 +1,38 @@
-const styles = () => ({
+const styles = (theme) => ({
     root: {
         width: '100%',
         height: '80vh',
-        '& video': {
-            objectFit: 'cover'
+        position: 'relative',
+        padding: '10% 0px',
+        '& .background': {
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            objectFit: 'cover',
+            zIndex: '-1',
+            [theme.breakpoints.down('md')]: {
+                height: '100%'
+            }
+        },
+        [theme.breakpoints.down('md')]: {
+            height: '50vh'
+        }
+    },
+    logo: {
+        width: '20vw',
+        [theme.breakpoints.down('md')]: {
+            width: '50vw'
+        }
+    },
+    text: {
+        fontSize: 70,
+        lineHeight: '1',
+        fontWeight: 300,
+        maxWidth: 500,
+        marginTop: '5%',
+        [theme.breakpoints.down('md')]: {
+            fontSize: 50
         }
     }
 });

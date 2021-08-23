@@ -5,7 +5,8 @@ const styles = (theme) => ({
         alignItems: 'flex-start',
         padding: '50px 0px',
         [theme.breakpoints.down('md')]: {
-            flexDirection: 'column'
+            flexDirection: 'column',
+            padding: '10px 0px'
         }
     },
     stepText: {
@@ -17,7 +18,10 @@ const styles = (theme) => ({
         [theme.breakpoints.down('xl')]: {
             fontSize: 220
         },
-        [theme.breakpoints.down('md')]: {}
+        [theme.breakpoints.down('md')]: {
+            fontSize: 100,
+            textAlignment: 'center'
+        }
     },
     quizText: {
         color: '#000',
@@ -29,7 +33,7 @@ const styles = (theme) => ({
             paddingLeft: '30px'
         },
         [theme.breakpoints.down('md')]: {
-            flex: 1,
+            fontSize: 30,
             paddingTop: '30px'
         }
     },
@@ -40,8 +44,9 @@ const styles = (theme) => ({
             padding: '80px 0px 0px 20px'
         },
         [theme.breakpoints.down('md')]: {
+            padding: '20px 0px 0px 10px',
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection: 'column',
             width: '100%'
         }
     },
