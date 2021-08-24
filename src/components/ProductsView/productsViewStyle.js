@@ -9,7 +9,8 @@ const styles = () => ({
         '&>p': {
             fontSize: 80,
             color: '#B1BABF',
-            fontWeight: 300
+            fontWeight: 300,
+            marginBottom: '30px'
         }
     },
     productContainer: {
@@ -31,6 +32,9 @@ const styles = () => ({
     },
     otherProdContainer: {
         backgroundColor: '#F6F6F6'
+    },
+    product_item_container: {
+        margin: '0px 10px'
     }
 });
 

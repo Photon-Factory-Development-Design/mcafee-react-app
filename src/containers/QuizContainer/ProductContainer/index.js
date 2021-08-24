@@ -1,6 +1,6 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { Grid, useMediaQuery, useTheme } from '@material-ui/core';
+import { Grid, useMediaQuery, useTheme, Box } from '@material-ui/core';
 import products from 'common/data/products';
 import MuiCarousel from 'react-material-ui-carousel';
 // import { Typography, Link } from 'components';
@@ -41,12 +41,13 @@ const ProductContainer = ({ asins, setDetailProduct }) => {
                 <React.Fragment>
                     {products.length > 1 &&
                         products.map((product, index) => (
-                            <ProductCard
-                                setDetailProduct={setDetailProduct}
-                                key={`product-item-${index}`}
-                                product={product}
-                                {...product.data}
-                            />
+                            <Box px={2} key={`product-item-${index}`}>
+                                <ProductCard
+                                    setDetailProduct={setDetailProduct}
+                                    product={product}
+                                    {...product.data}
+                                />
+                            </Box>
                         ))}
                 </React.Fragment>
             ) : (

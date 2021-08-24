@@ -3,7 +3,7 @@ const styles = (theme) => ({
         width: '100%',
         height: '80vh',
         position: 'relative',
-        padding: '50px 0px',
+        padding: '100px 0px',
         overflow: 'hidden',
         '& .background': {
             position: 'absolute',
@@ -18,6 +18,19 @@ const styles = (theme) => ({
         },
         [theme.breakpoints.down('md')]: {
             height: '50vh'
+        },
+        '&>img': {
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '150%',
+            objectFit: 'cover',
+            zIndex: -1,
+            [theme.breakpoints.down('md')]: {
+                height: '150%',
+                objectPosition: 'center'
+            }
         }
     },
     logo: {

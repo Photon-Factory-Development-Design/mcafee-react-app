@@ -46,7 +46,7 @@ const QuizContainer = React.forwardRef((props, ref) => {
     };
 
     return (
-        <BackgroundContainer ref={ref} color="white" vertical={8}>
+        <BackgroundContainer ref={ref} color="white" verticalTop={8}>
             <Carousel
                 items={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
                 questionPath={questionPath}
