@@ -36,7 +36,7 @@ const styles = (theme) => ({
     section_3: {
         maxWidth: '80%',
         fontSize: 16,
-        fontWeight: 300,
+        fontWeight: 400,
         paddingBottom: 90
     },
     section_4: {

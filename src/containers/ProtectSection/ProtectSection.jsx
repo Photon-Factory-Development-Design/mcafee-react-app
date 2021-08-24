@@ -27,28 +27,12 @@ class ProtectSection extends React.Component {
                         <Typography className={classes.section_1}>
                             Protect what matters
                         </Typography>
-                        <Typography className={classes.section_2}>
-                            It’s more than just antivirus software—it’s peace of
-                            mind.
-                        </Typography>
                         <Typography className={classes.section_3}>
                             McAfee is the online protection cybersecurity
                             company. We protect millions of users around the
                             world and empower them to experience more by making
                             it simpler to be safe online.
                         </Typography>
-                        <Box className={classes.section_4}>
-                            <img src={iconImage} alt="man-head" />
-                            <Box>
-                                <Typography>
-                                    Always-available online security experts
-                                </Typography>
-                                <Typography>
-                                    Get around-the-clock assistance from
-                                    McAfee’s expert team.
-                                </Typography>
-                            </Box>
-                        </Box>
                     </Box>
                 </Container>
             </Box>

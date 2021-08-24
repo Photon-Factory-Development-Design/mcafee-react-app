@@ -47,6 +47,19 @@ const QuizContainer = React.forwardRef((props, ref) => {
 
     return (
         <BackgroundContainer ref={ref} color="white" verticalTop={8}>
+            {activeStep === 0 && (
+                <Box py={2}>
+                    <Typography
+                        style={{
+                            fontSize: 20,
+                            fontWeight: 400,
+                            color: 'black'
+                        }}
+                        align="center">
+                        Answer these questions to learn more
+                    </Typography>
+                </Box>
+            )}
             <Carousel
                 items={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
                 questionPath={questionPath}
