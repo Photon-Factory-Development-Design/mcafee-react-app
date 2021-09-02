@@ -1,15 +1,13 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { Grid, useMediaQuery, useTheme, Box } from '@material-ui/core';
-import products from 'common/data/products';
+import { getProducts } from 'common/data/products';
 import MuiCarousel from 'react-material-ui-carousel';
 // import { Typography, Link } from 'components';
 import ProductCard from 'components/ProductCard';
 import { ProductDetail } from 'components';
 
 // util to get products from question value
-const getProducts = (asins) =>
-    products.filter((product) => asins.includes(product.data.ASIN.value));
 
 const ProductContainer = ({ asins, setDetailProduct }) => {
     const [products, setProducts] = React.useState([]);

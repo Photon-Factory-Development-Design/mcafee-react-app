@@ -15,7 +15,8 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 // constant
 import { base_url } from 'common/constant';
-import products from 'common/data/products';
+import { getProducts } from 'common/data/products';
+
 
 // icons
 import ReplayIcon from '@material-ui/icons/Replay';
@@ -45,13 +46,13 @@ const responsive = {
         items: 2
     }
 };
-const getProducts = (asins) =>
-    products.filter((product) => !asins.includes(product.data.ASIN.value));
+
 
 class ProductsView extends React.Component {
     render() {
         const { classes, asins, setDetailProduct, onRetakeQuiz } = this.props;
-        const products = getProducts(asins);
+        const products = getProducts(asins, false);
+        console.log(products);  
         return (
             <Box>
                 <Box className={classes.tyContainer}>
