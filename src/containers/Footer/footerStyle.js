@@ -45,6 +45,9 @@ const styles = (theme) => ({
                 textTransform: 'none'
             }
         }
+    },
+    shopButton: {
+        backgroundColor: '#00aeef'
     }
 });
 

@@ -37,8 +37,10 @@ const styles = (theme) => ({
             paddingTop: '30px'
         }
     },
+    imageContainer: {
+        maxWidth: 700,
+    },
     quizContainer: {
-        width: '40%',
         padding: '80px 0px 0px 40px',
         [theme.breakpoints.down('xl')]: {
             padding: '80px 0px 0px 20px'

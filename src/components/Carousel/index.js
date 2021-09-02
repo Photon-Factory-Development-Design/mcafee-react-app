@@ -71,6 +71,7 @@ const Carousel = ({
     activeIndex,
     onSelectQuestion,
     onRetakeQuiz,
+    onPrevStep,
     asins,
     setDetailProduct
 }) => {
@@ -100,6 +101,7 @@ const Carousel = ({
                     index={index}
                     onSelectQuestion={onSelectQuestion}
                     onRetakeQuiz={onRetakeQuiz}
+                    onPrevStep={onPrevStep}
                     asins={asins}
                     setDetailProduct={setDetailProduct}
                 />

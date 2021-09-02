@@ -23,12 +23,13 @@ import { getQuestion } from 'common/constant/questions';
 
 // icons
 import ReplayIcon from '@material-ui/icons/Replay';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 const quizImages = [
     `${base_url}/assets/images/quiz-images/AdobeStock_198775715.png`,
     `${base_url}/assets/images/quiz-images/shutterstock_278513663.png`,
-    `${base_url}/assets/images/quiz-images/Clip.png`,
-    `${base_url}/assets/images/quiz-images/MCAFEE_DAY3_SHOT6_4750.png`
+    `${base_url}/assets/images/quiz-images/MCAFEE_DAY3_SHOT6_4750.png`,
+    `${base_url}/assets/images/quiz-images/Clip.png`
 ];
 
 /**
@@ -36,8 +37,14 @@ const quizImages = [
  */
 class QuizCarouselItem extends React.Component {
     render() {
-        const { classes, index, questionPath, onSelectQuestion, onRetakeQuiz } =
-            this.props;
+        const {
+            classes,
+            index,
+            questionPath,
+            onSelectQuestion,
+            onRetakeQuiz,
+            onPrevStep
+        } = this.props;
         const itemQuestion = getQuestion(questionPath, index);
 
         const quizImage = quizImages[index];
@@ -64,6 +71,12 @@ class QuizCarouselItem extends React.Component {
                             <McaFeeButton variant="text" onClick={onRetakeQuiz}>
                                 <ReplayIcon />
                                 Retake Quiz
+                            </McaFeeButton>
+                        )}
+                        {index > 0 && (
+                            <McaFeeButton variant="text" onClick={onPrevStep}>
+                                <ArrowBackIcon />
+                                Previous
                             </McaFeeButton>
                         )}
                     </Box>

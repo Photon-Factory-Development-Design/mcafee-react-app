@@ -27,11 +27,11 @@ class Footer extends React.Component {
                 <Container>
                     <Box className={classes.container}>
                         <Typography>
-                            Can’t find what you’re looking for?{' '}
+                            Shop McAfee protection solutions{' '}
                         </Typography>
-                        <Typography>Shop for more McAfee products.</Typography>
+                        <Typography>Visit our Amazon store to learn more</Typography>
                         <a href="https://amazon.com/mcafee">
-                            <McaFeeButton variant="outlined">
+                            <McaFeeButton variant="contained" className={classes.shopButton}>
                                 Shop Now
                             </McaFeeButton>
                         </a>

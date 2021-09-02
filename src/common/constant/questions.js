@@ -1,15 +1,15 @@
 const questions = {
     questions: [
         {
-            description: 'Do you use your device to shop or bank?',
+            description: 'Do you shop or bank online?',
             questions: [
                 {
                     question: 'Yes',
-                    label: 'Do you connect to a WiFi?',
+                    label: 'Do you connect to a Wi-Fi?',
                     questions: [
                         {
                             question: 'Yes',
-                            label: 'Do you need parental controls?',
+                            label: 'Want to build good digital habits for your kids?',
                             questions: [
                                 {
                                     question: 'Yes',
@@ -17,8 +17,8 @@ const questions = {
                                 },
                                 {
                                     question: 'No',
-                                    description: 'How many total devices need coverage?',
-                                    label: 'How many total devices need coverage?',
+                                    description: 'How many devices need coverage?',
+                                    label: 'How many devices need coverage?',
                                     questions: [
                                         {
                                             question: '1-3',
@@ -38,7 +38,7 @@ const questions = {
                         },
                         {
                             question: 'No',
-                            label: 'Do you need parental controls?',
+                            label: 'Want to build good digital habits for your kids?',
                             questions: [
                                 {
                                     question: 'Yes',
@@ -46,7 +46,7 @@ const questions = {
                                 },
                                 {
                                     question: 'No',
-                                    label: 'How many total devices need coverage?',
+                                    label: 'How many devices need coverage?',
                                     questions: [
                                         {
                                             question: '1-3',
@@ -68,11 +68,11 @@ const questions = {
                 },
                 {
                     question: 'No',
-                    label: 'Do you connect to a WiFi?',
+                    label: 'Do you connect to a Wi-Fi?',
                     questions: [
                         {
                             question: 'Yes',
-                            label: 'Do you need parental controls?',
+                            label: 'Want to build good digital habits for your kids?',
                             questions: [
                                 {
                                     question: 'Yes',
@@ -80,8 +80,8 @@ const questions = {
                                 },
                                 {
                                     question: 'No',
-                                    description: 'How many total devices need coverage?',
-                                    label: 'How many total devices need coverage?',
+                                    description: 'How many devices need coverage?',
+                                    label: 'How many devices need coverage?',
                                     questions: [
                                         {
                                             question: '1-3',
@@ -101,7 +101,7 @@ const questions = {
                         },
                         {
                             question: 'No',
-                            label: 'Do you need parental controls?',
+                            label: 'Want to build good digital habits for your kids?',
                             questions: [
                                 {
                                     question: 'Yes',
@@ -109,10 +109,10 @@ const questions = {
                                 },
                                 {
                                     question: 'No',
-                                    label: 'How many total devices need coverage?',
+                                    label: 'How many devices need coverage?',
                                     questions: [
                                         {
-                                            question: '1PC',
+                                            question: '1 PC',
                                             ASINS: ['B07BFRR94X']
                                         },
                                         {

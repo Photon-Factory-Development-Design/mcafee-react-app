@@ -45,6 +45,11 @@ const QuizContainer = React.forwardRef((props, ref) => {
         setActiveStep(0);
     };
 
+    const onPrevStep = () => {
+        setQuestionPath((prev) => prev.slice(0, prev.length - 1));
+        setActiveStep((prev) => prev - 1);
+    };
+
     return (
         <BackgroundContainer ref={ref} color="white" verticalTop={8}>
             {activeStep === 0 && (
@@ -66,6 +71,7 @@ const QuizContainer = React.forwardRef((props, ref) => {
                 activeIndex={activeStep}
                 onSelectQuestion={onSelectQuestion}
                 onRetakeQuiz={onRetakeQuiz}
+                onPrevStep={onPrevStep}
                 asins={asins}
                 setDetailProduct={props.setDetailProduct}
             />
