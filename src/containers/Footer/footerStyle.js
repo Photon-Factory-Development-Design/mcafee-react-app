@@ -29,13 +29,13 @@ const styles = (theme) => ({
         },
         '&>p:nth-child(1)': {
             fontSize: 50,
-            color: '#333333',
+            color: '#FFF',
             [theme.breakpoints.down('md')]: {
                 fontSize: 30
             }
         },
         '&>p:nth-child(2)': {
-            color: '#000',
+            color: '#FFF',
             fontSize: 16
         },
         '& button': {
