@@ -1006,13 +1006,17 @@ const products = [
 ];
 
 const SaaSAsins = ['B07K98XDX8', 'B07K98LLVV', 'B07K995RWG'];
-export const getProducts = (asins, isInclude = true) =>
+export const getProducts = (asins, isInclude = true, isSaas = false) =>
     products
-        .filter((product) =>
-            isInclude
-                ? asins.includes(product.data.ASIN.value)
-                : !asins.includes(product.data.ASIN.value)
-        )
+        .filter((product) => {
+            console.log(product.data.ASIN.value);
+            return (
+                (isSaas ? SaaSAsins.includes(product.data.ASIN.value) : true) &&
+                (isInclude
+                    ? asins.includes(product.data.ASIN.value)
+                    : !asins.includes(product.data.ASIN.value))
+            );
+        })
         .sort((a, b) => {
             const isASaaS = SaaSAsins.includes(a.data.ASIN.value),
                 isBSaaS = SaaSAsins.includes(b.data.ASIN.value);

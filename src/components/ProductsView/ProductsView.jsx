@@ -43,7 +43,7 @@ const responsive = {
     },
     mobile: {
         breakpoint: { max: 767, min: 0 },
-        items: 2
+        items: 1
     }
 };
 
@@ -51,8 +51,8 @@ const responsive = {
 class ProductsView extends React.Component {
     render() {
         const { classes, asins, setDetailProduct, onRetakeQuiz } = this.props;
-        const products = getProducts(asins, false);
-        console.log(products);  
+        const products = getProducts(asins, false, true);
+        console.log(products);
         return (
             <Box>
                 <Box className={classes.tyContainer}>
