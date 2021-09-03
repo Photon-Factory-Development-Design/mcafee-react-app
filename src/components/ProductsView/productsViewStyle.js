@@ -10,7 +10,7 @@ const styles = () => ({
             fontSize: 80,
             color: '#B1BABF',
             fontWeight: 300,
-            marginBottom: '30px'
+            marginBottom: '3rem !important'
         }
     },
     productContainer: {

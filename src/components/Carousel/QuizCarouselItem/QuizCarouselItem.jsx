@@ -81,12 +81,14 @@ class QuizCarouselItem extends React.Component {
                         )}
                     </Box>
                     <Box className={classes.quizContainer}>
-                        <Typography className={classes.stepText}>
-                            {index + 1}
-                        </Typography>
-                        <Typography className={classes.quizText}>
-                            {itemQuestion.description || itemQuestion.label}
-                        </Typography>
+                        <Box className={classes.stepAndQuestion}>
+                            <Typography className={classes.stepText}>
+                                {index + 1}
+                            </Typography>
+                            <Typography className={classes.quizText}>
+                                {itemQuestion.description || itemQuestion.label}
+                            </Typography>
+                        </Box>
 
                         <Box className={classes.answersContainer}>
                             {itemQuestion &&

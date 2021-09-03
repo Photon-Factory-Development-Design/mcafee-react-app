@@ -1,7 +1,7 @@
 const styles = (theme) => ({
     root: {
         width: '100%',
-        height: '80vh',
+        height: '50vh',
         position: 'relative',
         padding: '100px 0px',
         overflow: 'hidden',
@@ -40,13 +40,13 @@ const styles = (theme) => ({
         }
     },
     text: {
-        fontSize: 70,
+        fontSize: 60,
         lineHeight: '1',
         fontWeight: 300,
         maxWidth: 500,
         marginTop: '5%',
         [theme.breakpoints.down('md')]: {
-            fontSize: 50
+            fontSize: 40
         }
     }
 });

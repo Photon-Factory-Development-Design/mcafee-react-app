@@ -3,7 +3,7 @@ const styles = (theme) => ({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
-        padding: '50px 0px',
+        padding: '3rem 0px 50px 0px',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
             padding: '10px 0px'
@@ -38,7 +38,7 @@ const styles = (theme) => ({
         }
     },
     imageContainer: {
-        maxWidth: 700,
+        maxWidth: 700
     },
     quizContainer: {
         padding: '80px 0px 0px 40px',
@@ -54,6 +54,11 @@ const styles = (theme) => ({
     },
     answersContainer: {
         padding: '80px 0px 0px 40px'
+    },
+    stepAndQuestion: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 });
 
