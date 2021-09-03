@@ -17,7 +17,6 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import { base_url } from 'common/constant';
 import { getProducts } from 'common/data/products';
 
-
 // icons
 import ReplayIcon from '@material-ui/icons/Replay';
 
@@ -46,7 +45,6 @@ const responsive = {
         items: 1
     }
 };
-
 
 class ProductsView extends React.Component {
     render() {
