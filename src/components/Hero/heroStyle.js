@@ -1,7 +1,6 @@
 const styles = (theme) => ({
     root: {
         width: '100%',
-        height: '50vh',
         position: 'relative',
         padding: '100px 0px',
         overflow: 'hidden',
@@ -17,7 +16,6 @@ const styles = (theme) => ({
             }
         },
         [theme.breakpoints.down('md')]: {
-            height: '50vh'
         },
         '&>img': {
             position: 'absolute',

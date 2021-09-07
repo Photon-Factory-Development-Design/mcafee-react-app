@@ -51,7 +51,7 @@ const QuizContainer = React.forwardRef((props, ref) => {
     };
 
     return (
-        <BackgroundContainer ref={ref} color="white" verticalTop={5}>
+        <Box ref={ref} color="white" pt={5}>
             {activeStep === 0 && (
                 <Box py={2}>
                     <Typography
@@ -75,7 +75,7 @@ const QuizContainer = React.forwardRef((props, ref) => {
                 asins={asins}
                 setDetailProduct={props.setDetailProduct}
             />
-        </BackgroundContainer>
+        </Box>
     );
 });
 
