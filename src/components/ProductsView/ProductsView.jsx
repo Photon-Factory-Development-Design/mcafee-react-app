@@ -50,7 +50,7 @@ class ProductsView extends React.Component {
     render() {
         const { classes, asins, setDetailProduct, onRetakeQuiz } = this.props;
         const products = getProducts(asins, false, true);
-        console.log(products);
+        console.log(products);  
         return (
             <Box>
                 <Box className={classes.tyContainer}>
@@ -74,8 +74,8 @@ class ProductsView extends React.Component {
                 </Box>
                 <Box className={classes.productContainer}>
                     <Typography className="title">
-                        Not what you’re looking for? Check out the rest of
-                        McAfee’s protection plans.
+                        Not what you’re looking for? Check out these other
+                        McAfee protection solutions.
                     </Typography>
                     <Container>
                         <Carousel arrows={true} responsive={responsive}>

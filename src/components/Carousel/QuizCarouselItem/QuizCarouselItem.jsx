@@ -48,7 +48,6 @@ class QuizCarouselItem extends React.Component {
         const itemQuestion = getQuestion(questionPath, index);
 
         const quizImage = quizImages[index];
-        console.log(questionPath, index, itemQuestion);
         if (!itemQuestion) {
             return <Skeleton variant="rect" width="100%" height={700} />;
         }

@@ -32,6 +32,7 @@ const QuizContainer = React.forwardRef((props, ref) => {
             // clear up asins
             setAsins(DefaultAsins);
         } else {
+            console.log(newQuestionPath, questionItem);
             // show asins
             setQuestionPath(newQuestionPath);
             setActiveStep((prev) => prev + 1);
@@ -40,9 +41,9 @@ const QuizContainer = React.forwardRef((props, ref) => {
     };
 
     const onRetakeQuiz = () => {
-        console.log('onRetakeQuiz');
         setQuestionPath([0]);
         setActiveStep(0);
+        ref.current.scrollIntoView();   
     };
 
     const onPrevStep = () => {

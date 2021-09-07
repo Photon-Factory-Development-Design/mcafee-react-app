@@ -42,7 +42,6 @@ function App() {
                             });
                         });
 
-                        console.log('offerings', offerings);
                         setOfferings(offerings);
                     },
                     (error) => {

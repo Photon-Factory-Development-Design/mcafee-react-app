@@ -4,10 +4,10 @@ const styles = () => ({
         flexDirection: 'column',
         alignItems: 'center',
         '&>img': {
-            width: 200
+            width: 100
         },
         '&>p': {
-            fontSize: 80,
+            fontSize: 60 ,
             color: '#B1BABF',
             fontWeight: 300,
             marginBottom: '3rem !important'

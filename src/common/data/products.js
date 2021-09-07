@@ -1009,7 +1009,6 @@ const SaaSAsins = ['B07K98XDX8', 'B07K98LLVV', 'B07K995RWG'];
 export const getProducts = (asins, isInclude = true, isSaas = false) =>
     products
         .filter((product) => {
-            console.log(product.data.ASIN.value);
             return (
                 (isSaas ? SaaSAsins.includes(product.data.ASIN.value) : true) &&
                 (isInclude

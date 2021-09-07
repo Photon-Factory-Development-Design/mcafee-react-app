@@ -6,7 +6,7 @@ const styles = (theme) => ({
         padding: '3rem 0px 50px 0px',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
-            padding: '10px 0px'
+            padding: '3rem 0px'
         }
     },
     stepText: {
@@ -19,7 +19,7 @@ const styles = (theme) => ({
             fontSize: 220
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 100,
+            fontSize: 60,
             textAlignment: 'center'
         }
     },
@@ -33,8 +33,8 @@ const styles = (theme) => ({
             paddingLeft: '30px'
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 30,
-            paddingTop: '30px'
+            fontSize: 20,
+            paddingTop: '20px'
         }
     },
     imageContainer: {
@@ -53,7 +53,10 @@ const styles = (theme) => ({
         }
     },
     answersContainer: {
-        padding: '80px 0px 0px 40px'
+        padding: '80px 0px 0px 40px',
+        [theme.breakpoints.down('md')]: {
+            padding: '20px 0px 0px 20px'
+        }
     },
     stepAndQuestion: {
         display: 'flex',

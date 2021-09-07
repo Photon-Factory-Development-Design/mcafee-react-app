@@ -1,4 +1,4 @@
-const styles = () => ({
+const styles = (theme) => ({
     button: {
         display: 'flex',
         flexDirection: 'row',
@@ -16,13 +16,17 @@ const styles = () => ({
         textTransform: 'none',
         '& svg': {
             fontSize: '30px !important',
-            fontWeight: 300,
+            fontWeight: 300
         }
     },
     label: {
         fontSize: 30,
         paddingRight: 20,
-        fontWeight: 300
+        fontWeight: 300,
+        [theme.breakpoints.down('md')]: {
+            fontSize: 15,
+            paddingRight: 15
+        }
     }
 });
 
