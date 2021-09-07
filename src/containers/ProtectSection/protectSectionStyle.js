@@ -9,11 +9,11 @@ const styles = (theme) => ({
             objectFit: 'cover',
             zIndex: -1,
             height: '100%',
-            [theme.breakpoints.down('md')]: {
-                height: '100%',
+            [theme.breakpoints.down('xs')]: {
+                height: 'auto',
                 //transform: 'translateX(-50%)',
-                objectFit: 'full',
-                objectPosition: 'right'
+                objectFit: 'unset',
+                position: 'relative'
             }
         },
         padding: '10% 0px'
@@ -25,7 +25,16 @@ const styles = (theme) => ({
         fontSize: 70,
         lineHeight: 1,
         fontWeight: 300,
-        paddingBottom: 30
+        paddingBottom: 30,
+        
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 40,
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 40,
+            marginTop: 40,
+            textAlign: 'center'
+        },
     },
     section_2: {
         fontSize: 20,
@@ -37,7 +46,18 @@ const styles = (theme) => ({
         maxWidth: '80%',
         fontSize: 24,
         fontWeight: 400,
-        paddingBottom: 90
+        paddingBottom: 90,
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 20,
+            maxWidth: '50%'
+        },
+        [theme.breakpoints.down('xs')]: {
+             maxWidth: '80%',
+            fontSize: 16,
+            marginTop: 10,
+            textAlign: 'center',
+            margin: 'auto'
+        }
     },
     section_4: {
         display: 'flex',

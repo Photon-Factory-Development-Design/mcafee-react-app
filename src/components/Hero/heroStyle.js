@@ -11,11 +11,13 @@ const styles = (theme) => ({
             width: '100%',
             objectFit: 'cover',
             zIndex: '-1',
-            [theme.breakpoints.down('md')]: {
-                height: '100%'
+            [theme.breakpoints.down('sm')]: {
+                height: '100%',
+                position: 'relative'
             }
         },
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('sm')]: {
+            padding: '0px'
         },
         '&>img': {
             position: 'absolute',
@@ -34,7 +36,9 @@ const styles = (theme) => ({
     logo: {
         width: '20vw',
         [theme.breakpoints.down('md')]: {
-            width: '50vw'
+            width: '50vw',
+            margin: 'auto',
+            marginTop: 60
         }
     },
     text: {
@@ -44,7 +48,11 @@ const styles = (theme) => ({
         maxWidth: 500,
         marginTop: '5%',
         [theme.breakpoints.down('md')]: {
-            fontSize: 40
+            fontSize: 40,
+            textAlign: 'center',
+            width: '100%',
+            margin: 'auto',
+            marginTop: 40
         }
     }
 });
