@@ -8,7 +8,7 @@ import MuiCarousel from 'react-material-ui-carousel';
 import ProductCard from 'components/ProductCard';
 import { ProductDetail } from 'components';
 
-import styles from './productContainerStyle';   
+import styles from './productContainerStyle';
 
 // util to get products from question value
 
@@ -37,7 +37,7 @@ const ProductContainer = ({ classes, asins, setDetailProduct }) => {
 
     // render
     return (
-        <Grid container direction="row" spacing={5} justify="center">
+        <Box display="flex" flexDirection="row" alignItems="flex-start" justifyContent="center">
             {matches ? (
                 <React.Fragment>
                     {products.length > 1 &&
@@ -77,7 +77,7 @@ const ProductContainer = ({ classes, asins, setDetailProduct }) => {
                     {...products[0].data}
                 />
             )}
-        </Grid>
+        </Box>
     );
 };
 

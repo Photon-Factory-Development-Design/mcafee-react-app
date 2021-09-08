@@ -18,7 +18,7 @@ const dimensions = (imgSrc) => {
 
 const ProductImage = ({ img }) => {
     const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.up('sm'));
+    const matches = useMediaQuery(theme.breakpoints.up('md'));
     const [dimension, setDimension] = React.useState({ width: 0, height: 0 });
 
     const onLoadImage = React.useCallback(({ target: image }) => {
@@ -41,7 +41,7 @@ const ProductImage = ({ img }) => {
                     flexDirection="row"
                     justifyContent="center">
                     <ReactImageMagnify
-                        {...{
+                        {...{   
                             smallImage: {
                                 width: dimension.width,
                                 height: dimension.height,
