@@ -50,7 +50,6 @@ class ProductsView extends React.Component {
     render() {
         const { classes, asins, setDetailProduct, onRetakeQuiz } = this.props;
         const products = getProducts(asins, false, true);
-        console.log(products);  
         return (
             <Box>
                 <Box className={classes.tyContainer}>

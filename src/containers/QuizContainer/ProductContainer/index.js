@@ -26,10 +26,10 @@ const ProductContainer = ({ classes, asins, setDetailProduct }) => {
 
     React.useEffect(() => {
         if (products.length === 1) {
-            productDetailRef.current.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            // productDetailRef.current.scrollIntoView({
+            //     behavior: 'smooth',
+            //     block: 'start'
+            // });
         }
     }, [products]);
 

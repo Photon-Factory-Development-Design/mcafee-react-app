@@ -38,12 +38,18 @@ const QuizContainer = React.forwardRef((props, ref) => {
             setActiveStep((prev) => prev + 1);
             setAsins(questionItem.ASINS);
         }
+
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
     };
 
     const onRetakeQuiz = () => {
         setQuestionPath([0]);
         setActiveStep(0);
-        ref.current.scrollIntoView();   
+        ref.current.scrollIntoView();
     };
 
     const onPrevStep = () => {
