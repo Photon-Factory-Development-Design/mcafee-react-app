@@ -1,15 +1,18 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { Grid, useMediaQuery, useTheme, Box } from '@material-ui/core';
+import withStyles from '@material-ui/core/styles/withStyles';
 import { getProducts } from 'common/data/products';
 import MuiCarousel from 'react-material-ui-carousel';
 // import { Typography, Link } from 'components';
 import ProductCard from 'components/ProductCard';
 import { ProductDetail } from 'components';
 
+import styles from './productContainerStyle';   
+
 // util to get products from question value
 
-const ProductContainer = ({ asins, setDetailProduct }) => {
+const ProductContainer = ({ classes, asins, setDetailProduct }) => {
     const [products, setProducts] = React.useState([]);
     const productDetailRef = React.useRef(null);
     const theme = useTheme();
@@ -52,6 +55,9 @@ const ProductContainer = ({ asins, setDetailProduct }) => {
                 <MuiCarousel
                     animation="slide"
                     autoPlay={false}
+                    navButtonsWrapperProps={{
+                        className: classes.navButtonWrapper
+                    }}
                     indicators={false}>
                     {products.length > 1 &&
                         products.map((product, index) => (
@@ -75,4 +81,4 @@ const ProductContainer = ({ asins, setDetailProduct }) => {
     );
 };
 
-export default ProductContainer;
+export default withStyles(styles)(ProductContainer);
