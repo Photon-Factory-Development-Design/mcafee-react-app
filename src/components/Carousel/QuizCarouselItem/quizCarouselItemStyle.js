@@ -19,7 +19,7 @@ const styles = (theme) => ({
             fontSize: 220
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: 60,
+            fontSize: 40,
             textAlignment: 'center'
         }
     },
@@ -34,7 +34,7 @@ const styles = (theme) => ({
         },
         [theme.breakpoints.down('md')]: {
             fontSize: 20,
-            paddingTop: '20px'
+            paddingTop: '10px'
         }
     },
     imageContainer: {
@@ -46,7 +46,7 @@ const styles = (theme) => ({
             padding: '80px 0px 0px 20px'
         },
         [theme.breakpoints.down('md')]: {
-            padding: '20px 0px 0px 10px',
+            padding: '0px 0px 0px 10px',
             display: 'flex',
             flexDirection: 'column',
             width: '100%'
@@ -55,7 +55,7 @@ const styles = (theme) => ({
     answersContainer: {
         padding: '80px 0px 0px 40px',
         [theme.breakpoints.down('md')]: {
-            padding: '20px 0px 0px 20px'
+            padding: '15px 0px 0px 20px'
         }
     },
     stepAndQuestion: {

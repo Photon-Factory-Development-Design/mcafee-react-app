@@ -13,7 +13,7 @@ const styles = (theme) => ({
             margin: '0px 10px 0px 0px'
         },
         [theme.breakpoints.down('md')]: {
-            fontSize: '15px !important'
+            fontSize: '12px !important'
         }
     },
     outlined: {

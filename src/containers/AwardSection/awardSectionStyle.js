@@ -23,7 +23,13 @@ const styles = (theme) => ({
             fontWeight: 600,
             color: '#fff',
             textAlign: 'center',
-            paddingBottom: 50
+            paddingBottom: 50,
+            [theme.breakpoints.down('md')]: {
+                paddingBottom: 20
+            },
+            [theme.breakpoints.down('sm')]: {
+                paddingBottom: 0
+            }
         }
     },
     logoContainer: {

@@ -47,7 +47,10 @@ const styles = (theme) => ({
         }
     },
     shopButton: {
-        backgroundColor: '#00aeef'
+        backgroundColor: '#00aeef',
+        [theme.breakpoints.down('sm')]: {
+            marginBottom: 20
+        }
     }
 });
 
