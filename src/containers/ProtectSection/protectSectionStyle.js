@@ -26,15 +26,15 @@ const styles = (theme) => ({
         lineHeight: 1,
         fontWeight: 300,
         paddingBottom: 30,
-        
+
         [theme.breakpoints.down('sm')]: {
-            fontSize: 40,
+            fontSize: 40
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 40,
             marginTop: 40,
             textAlign: 'center'
-        },
+        }
     },
     section_2: {
         fontSize: 20,
@@ -49,14 +49,18 @@ const styles = (theme) => ({
         paddingBottom: 90,
         [theme.breakpoints.down('sm')]: {
             fontSize: 20,
-            maxWidth: '50%'
+            maxWidth: '50%',
+
+            paddingBottom: 0
         },
         [theme.breakpoints.down('xs')]: {
-             maxWidth: '80%',
+            maxWidth: '80%',
             fontSize: 16,
             marginTop: 10,
             textAlign: 'center',
-            margin: 'auto'
+            margin: 'auto',
+
+            paddingBottom: 0
         }
     },
     section_4: {
