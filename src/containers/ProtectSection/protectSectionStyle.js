@@ -28,7 +28,9 @@ const styles = (theme) => ({
         paddingBottom: 30,
 
         [theme.breakpoints.down('sm')]: {
-            fontSize: 40
+            fontSize: 40,
+
+            paddingBottom: 10
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 40,
