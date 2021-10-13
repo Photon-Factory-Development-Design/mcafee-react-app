@@ -2,7 +2,7 @@ const styles = (theme) => ({
     root: {
         width: '100%',
         position: 'relative',
-        padding: '100px 0px',
+        padding: '100px 0px 50px 0px',
         overflow: 'hidden',
         '& .background': {
             position: 'absolute',
@@ -45,7 +45,7 @@ const styles = (theme) => ({
         fontSize: 60,
         lineHeight: '1',
         fontWeight: 300,
-        maxWidth: 500,
+        maxWidth: 600,
         marginTop: '5%',
         [theme.breakpoints.down('md')]: {
             fontSize: 40,

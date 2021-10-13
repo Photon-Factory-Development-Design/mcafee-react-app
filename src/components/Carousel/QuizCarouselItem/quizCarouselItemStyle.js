@@ -3,7 +3,7 @@ const styles = (theme) => ({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
-        padding: '3rem 0px 50px 0px',
+        padding: '10px 0px 50px 0px',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
             padding: '3rem 0px'
@@ -28,6 +28,7 @@ const styles = (theme) => ({
         fontSize: 90,
         paddingLeft: '40px',
         fontWeight: 300,
+        lineHeight: 1.2,
         [theme.breakpoints.down('xl')]: {
             fontSize: 50,
             paddingLeft: '30px'
@@ -41,19 +42,19 @@ const styles = (theme) => ({
         maxWidth: 700
     },
     quizContainer: {
-        padding: '80px 0px 0px 40px',
+        padding: '0px 0px 0px 40px',
         [theme.breakpoints.down('xl')]: {
-            padding: '80px 0px 0px 20px'
+            padding: '0px 0px 0px 20px'
         },
         [theme.breakpoints.down('md')]: {
-            padding: '0px 0px 0px 10px',
+            padding: '10px 0px 0px 10px',
             display: 'flex',
             flexDirection: 'column',
             width: '100%'
         }
     },
     answersContainer: {
-        padding: '80px 0px 0px 40px',
+        padding: '0px 0px 0px 40px',
         [theme.breakpoints.down('md')]: {
             padding: '15px 0px 0px 20px'
         }

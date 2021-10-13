@@ -58,7 +58,7 @@ const QuizContainer = React.forwardRef((props, ref) => {
     };
 
     return (
-        <Box ref={ref} color="white" pt={5}>
+        <Box ref={ref} color="white" pt={1}>
             {activeStep === 0 && (
                 <Box py={2}>
                     <Typography
