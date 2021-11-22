@@ -6,7 +6,8 @@ const styles = (theme) => ({
         padding: '10px 0px 50px 0px',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
-            padding: '3rem 0px'
+            padding: '3rem 0px',
+            paddingBottom: '0px'
         }
     },
     stepText: {

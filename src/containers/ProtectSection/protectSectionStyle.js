@@ -16,7 +16,23 @@ const styles = (theme) => ({
                 position: 'relative'
             }
         },
-        padding: '10% 0px'
+        padding: '100px 0px',
+        [theme.breakpoints.down('sm')]: {
+            padding: '50px 0px'
+        }
+    },
+    container: {
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column'
+        },
+
+        '&>*': {
+            flex: 1,
+
+            [theme.breakpoints.down('sm')]: {
+                margin: '10px 0px'
+            }
+        }
     },
     section_1: {
         fontSize: 70,
@@ -31,7 +47,6 @@ const styles = (theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: 40,
-            marginTop: 40,
             textAlign: 'center'
         }
     },
@@ -42,18 +57,15 @@ const styles = (theme) => ({
         paddingBottom: 30
     },
     section_3: {
-        maxWidth: '80%',
         fontSize: 24,
         fontWeight: 400,
         paddingBottom: 90,
         [theme.breakpoints.down('sm')]: {
             fontSize: 20,
-            maxWidth: '50%',
 
             paddingBottom: 0
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '80%',
             fontSize: 16,
             marginTop: 10,
             textAlign: 'center',
