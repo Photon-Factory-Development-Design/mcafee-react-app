@@ -18,9 +18,6 @@ const styles = (theme) => ({
         },
         padding: '10% 0px'
     },
-    container: {
-        maxWidth: 700
-    },
     section_1: {
         fontSize: 70,
         lineHeight: 1,

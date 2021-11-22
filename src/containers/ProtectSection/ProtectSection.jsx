@@ -39,18 +39,26 @@ const ProtectSection = (props) => {
     }
     return (
         <Box className={classes.protect_root}>
-            <img src={_bgImage} alt="bg" />
             <Container>
-                <Box className={classes.container}>
-                    <Typography className={classes.section_1}>
-                        Protect what matters
-                    </Typography>
-                    <Typography className={classes.section_3}>
-                        McAfee is the online protection cybersecurity company.
-                        We protect millions of users around the world and
-                        empower them to experience more by making it simpler to
-                        be safe online.
-                    </Typography>
+                <Box
+                    display="flex"
+                    flexDirection="row"
+                    alignItems="center"
+                    className={classes.container}>
+                    <Box>
+                        <Typography className={classes.section_1}>
+                            Protect what matters
+                        </Typography>
+                        <Typography className={classes.section_3}>
+                            McAfee is the online protection cybersecurity
+                            company. We protect millions of users around the
+                            world and empower them to experience more by making
+                            it simpler to be safe online.
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <img src={tableImage} alt="table" />
+                    </Box>
                 </Box>
             </Container>
         </Box>
