@@ -21,18 +21,18 @@ window.CB = {}
 - Add CSS styles  
 e.g.
 ```
-<link href="https://cdn.jsdelivr.net/gh/Photon-Factory-Development-Design/gold-bond-react-app@1.3.7/build/static/css/main.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/Photon-Factory-Development-Design/mcafee-react-app@1.3.7/build/static/css/main.css" rel="stylesheet" />
 ```
->Note: In the above example, `https://cdn.jsdelivr.net/gh/` is a Github CDN server URL. `Photon-Factory-Development-Design` is a Organization/Owner name. `gold-bond-react-app@1.3.7` is a repository name and version name that you added. `build/static/css/main.css` is the path to css file.
+>Note: In the above example, `https://cdn.jsdelivr.net/gh/` is a Github CDN server URL. `Photon-Factory-Development-Design` is a Organization/Owner name. `mcafee-react-app@1.3.7` is a repository name and version name that you added. `build/static/css/main.css` is the path to css file.
 - Add JS code
 e.g.
 ```
-<script src="https://cdn.jsdelivr.net/gh/Photon-Factory-Development-Design/gold-bond-react-app@1.3.7/build/static/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Photon-Factory-Development-Design/mcafee-react-app@1.3.7/build/static/js/main.js"></script>
 ```
->Note: In the above example, `https://cdn.jsdelivr.net/gh/` is a Github CDN server URL. `Photon-Factory-Development-Design` is a Organization/Owner name. `gold-bond-react-app@1.3.7` is a repository name and version name that you added. `build/static/js/main.js` is the path to js file.
+>Note: In the above example, `https://cdn.jsdelivr.net/gh/` is a Github CDN server URL. `Photon-Factory-Development-Design` is a Organization/Owner name. `mcafee-react-app@1.3.7` is a repository name and version name that you added. `build/static/js/main.js` is the path to js file.
 - Add Amazon style sheets
 ```
-<link href="https://cdn.jsdelivr.net/gh/Photon-Factory-Development-Design/gold-bond-react-app@1.3.7/public/styles.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/Photon-Factory-Development-Design/mcafee-react-app@1.3.7/public/styles.css" rel="stylesheet" />
 ```
 This is essential to match styles to AWS texts, rating stars, buttons etc. 
 - Add HTML element to render product selector
