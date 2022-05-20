@@ -16,7 +16,7 @@ import styles from './footerStyle';
 import { base_url } from 'common/constant';
 
 // images
-const bgImage = `${base_url}/assets/images/footer-bg.png`;
+const bgImage = `${base_url}/assets/images/footer-bg.jpg`;
 
 class Footer extends React.Component {
     render() {
