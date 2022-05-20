@@ -17,8 +17,8 @@ import { base_url } from 'common/constant';
 const logoURL = `${base_url}/assets/images/logo.png`;
 const bgURL = {
     desktop: `${base_url}/assets/images/header.png`,
-    tablet: `${base_url}/assets/images/header-tablet.png`,
-    mobile: `${base_url}/assets/images/header-mobile.png`
+    tablet: `${base_url}/assets/images/tablet-header.jpg`,
+    mobile: `${base_url}/assets/images/mobile-header.jpg`
 };
 
 const Hero = ({ classes }) => {
