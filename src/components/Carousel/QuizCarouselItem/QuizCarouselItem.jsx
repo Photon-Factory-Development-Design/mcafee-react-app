@@ -26,10 +26,10 @@ import ReplayIcon from '@material-ui/icons/Replay';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 const quizImages = [
-    `${base_url}/assets/images/quiz-images/AdobeStock_198775715.png`,
-    `${base_url}/assets/images/quiz-images/shutterstock_278513663.png`,
-    `${base_url}/assets/images/quiz-images/MCAFEE_DAY3_SHOT6_4750.png`,
-    `${base_url}/assets/images/quiz-images/Clip.png`
+    `${base_url}/assets/images/quiz-images/quiz-question-1-shop.jpg`,
+    `${base_url}/assets/images/quiz-images/quiz-question-2-vpn.jpg`,
+    `${base_url}/assets/images/quiz-images/quiz-question-3-children.jpg`,
+    `${base_url}/assets/images/quiz-images/quiz-questions-4-devices.jpg`
 ];
 
 /**
