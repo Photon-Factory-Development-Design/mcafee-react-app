@@ -13,24 +13,25 @@ const questions = {
                             questions: [
                                 {
                                     question: 'Yes',
-                                    ASINS: ['B08SHTW92W', 'B07K995RWG'],
+                                    ASINS: ['B08SHTW92W', 'B07BFRVMMN']
                                 },
                                 {
                                     question: 'No',
-                                    description: 'How many devices need coverage?',
+                                    description:
+                                        'How many devices need coverage?',
                                     label: 'How many devices need coverage?',
                                     questions: [
                                         {
                                             question: '1-3',
-                                            ASINS: ['B07K98XDX8']
+                                            ASINS: ['B07BFS3G7P']
                                         },
                                         {
                                             question: '4-5',
-                                            ASINS: ['B07K98LLVV']
+                                            ASINS: ['B07BFRYH2K']
                                         },
                                         {
                                             question: 'Too many to count',
-                                            ASINS: ['B08SHTW92W', 'B07K995RWG']
+                                            ASINS: ['B08SHTW92W', 'B07BFRVMMN']
                                         }
                                     ]
                                 }
@@ -42,7 +43,7 @@ const questions = {
                             questions: [
                                 {
                                     question: 'Yes',
-                                    ASINS: ['B07BFRVMMN', 'B07K995RWG'],
+                                    ASINS: ['B07BFRVMMN', 'B07BFRVMMN']
                                 },
                                 {
                                     question: 'No',
@@ -50,20 +51,20 @@ const questions = {
                                     questions: [
                                         {
                                             question: '1-3',
-                                            ASINS: ['B07BFS3G7P', 'B07K98XDX8']
+                                            ASINS: ['B07BFS3G7P']
                                         },
                                         {
                                             question: '4-5',
-                                            ASINS: ['B07BFRYH2K', 'B07K98LLVV']
+                                            ASINS: ['B07BFRYH2K']
                                         },
                                         {
                                             question: 'Too many to count',
-                                            ASINS: ['B07BFRVMMN', 'B07K995RWG']
+                                            ASINS: ['B07BFRVMMN', 'B07BFRVMMN']
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
                     ]
                 },
                 {
@@ -76,24 +77,25 @@ const questions = {
                             questions: [
                                 {
                                     question: 'Yes',
-                                    ASINS: ['B08SHTW92W', 'B07K995RWG'],
+                                    ASINS: ['B08SHTW92W', 'B07BFRVMMN']
                                 },
                                 {
                                     question: 'No',
-                                    description: 'How many devices need coverage?',
+                                    description:
+                                        'How many devices need coverage?',
                                     label: 'How many devices need coverage?',
                                     questions: [
                                         {
                                             question: '1-3',
-                                            ASINS: ['B07K98XDX8']
+                                            ASINS: ['B07BFS3G7P']
                                         },
                                         {
                                             question: '4-5',
-                                            ASINS: ['B07K98LLVV']
+                                            ASINS: ['B07BFRYH2K']
                                         },
                                         {
                                             question: 'Too many to count',
-                                            ASINS: ['B08SHTW92W', 'B07K995RWG']
+                                            ASINS: ['B08SHTW92W', 'B07BFRVMMN']
                                         }
                                     ]
                                 }
@@ -105,7 +107,7 @@ const questions = {
                             questions: [
                                 {
                                     question: 'Yes',
-                                    ASINS: ['B07BFRVMMN', 'B07K995RWG'],
+                                    ASINS: ['B07BFRVMMN', 'B07BFRVMMN']
                                 },
                                 {
                                     question: 'No',
@@ -122,9 +124,9 @@ const questions = {
                                     ]
                                 }
                             ]
-                        },
+                        }
                     ]
-                },
+                }
             ]
         }
     ]
