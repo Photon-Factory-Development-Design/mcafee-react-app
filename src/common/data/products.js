@@ -1,4 +1,4 @@
-const products = [
+let products = [
     {
         url: 'https://www.amazon.com/gp/product/B08SHTW92W?th=1&psc=1',
         data: {
@@ -1031,7 +1031,7 @@ const products = [
     }
 ];
 
-const SaaSAsins = ['B07K98XDX8', 'B07K98LLVV', 'B07K995RWG'];
+const SaaSAsins = ['B07BFS3G7P', 'B07BFRYH2K', 'B07BFRVMMN'];
 export const getProducts = (asins, isInclude = true, isSaas = false) =>
     products
         .filter((product) => {
@@ -1055,4 +1055,8 @@ export const getProducts = (asins, isInclude = true, isSaas = false) =>
 export const defaultAsins = products
     .slice(0, 3)
     .map((obj) => obj.data.ASIN.value);
+
+export const setProducts = (newProducts) => {
+    products = newProducts;
+};
 export default products;

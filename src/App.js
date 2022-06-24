@@ -11,6 +11,7 @@ import Hero from 'components/Hero/Hero';
 import AwardSection from 'containers/AwardSection/AwardSection';
 import ProtectSection from 'containers/ProtectSection/ProtectSection';
 import Footer from 'containers/Footer/Footer';
+import { setProducts } from 'common/data/products';
 
 function App() {
     const [open, setOpen] = React.useState(false);
@@ -32,7 +33,7 @@ function App() {
                 'Samzu777##'
             )
             .then(() => {
-                db.ref(`/labvGn2UNma4bJnkLKmhTpjuyzT2/offering`).on(
+                db.ref(`/labvGn2UNma4bJnkLKmhTpjuyzT2/mcafee/offering`).on(
                     'value',
                     (snapshot) => {
                         const offerings = [];
@@ -43,6 +44,24 @@ function App() {
                         });
 
                         setOfferings(offerings);
+                    },
+                    (error) => {
+                        console.log('error', error);
+                    }
+                );
+
+                db.ref(`/labvGn2UNma4bJnkLKmhTpjuyzT2/mcafee`).on(
+                    'value',
+                    (snapshot) => {
+                        const products = [];
+                        snapshot.forEach((snap) => {
+                            products.push({
+                                ...snap.val()
+                            });
+                        });
+
+                        console.log('products', products);
+                        setProducts(products);
                     },
                     (error) => {
                         console.log('error', error);
